@@ -7,7 +7,7 @@ interface Titleprops {
 const Title = (props: Titleprops) => {
     return (
         <div>
-            <h1 className="text-xl md:text-3xl text-center	font-medium my-5">~{props.title}~</h1>
+            <h1 className="my-10 text-2xl md:text-4xl text-center font-bold my-5"><span className="text-green-700">～</span>{props.title}<span className="text-green-700">～</span></h1>
         </div>
     )
 }

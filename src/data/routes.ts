@@ -1,6 +1,7 @@
 export const routes = [
-    { name: "料金＆席", link: "/service" },
-    { name: "営業時間", link: "/company" },
-    { name: "アクセス", link: "/recruit" },
+    { name: "市ヶ谷コワーキングカフェとは", link: "about" },
+    { name: "料金＆席", link: "seatfee" },
+    { name: "営業時間", link: "openinghours" },
+    { name: "アクセス", link: "access" },
     { name: "予約する", link: "/sample" },
   ]

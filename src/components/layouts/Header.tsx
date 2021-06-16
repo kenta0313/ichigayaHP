@@ -14,13 +14,14 @@ import {
   ListItemText,
   SwipeableDrawer,
   IconButton,
-  Link,
 } from "@material-ui/core"
 
 import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import MenuIcon from "@material-ui/icons/Menu"
 
 import { routes } from "../../data/routes"
+
+import { Link, animateScroll as scroll } from "react-scroll";
 
 interface ElevationScrollProps {
   children: React.ReactElement
@@ -90,11 +91,19 @@ const Header = () => {
       <Grid container justify="flex-end" spacing={4}>
         {path.map(({ name, link }) => (
           <Grid item key={link}>
-            <Link href={link}>
+            <Link
+              className="cursor-pointer hover:text-green-700"
+              activeClass="active"
+              to={link}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration= {800}
+            >
               <Typography
                 style={{
                   color: "inherit",
-                  fontWeight: router.pathname.match(link) ? "bold" : "normal",
+                  fontWeight: "bold",
                   borderBottom: router.pathname.match(link) && "1px solid #757ce8",
                   marginRight: 30,
                 }}
@@ -132,14 +141,25 @@ const Header = () => {
               }}
             >
               <ListItemText disableTypography>
-                <Link href={link}>
+              <Link
+                activeClass="active"
+                to={link}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration= {800}
+                onClick={() => {
+                  setOpenDrawer(false)
+                }}
+              >
                   <Typography
+                    className="cursor-pointer hover:text-green-700"
                     style={{
                       color:
                         router.pathname === link
                           ? "primary"
                           : "rgb(107 107 107)",
-                      fontWeight: router.pathname === link ? "bold" : "normal"
+                      fontWeight: "bold"
                     }}
                   >
                     {name}
