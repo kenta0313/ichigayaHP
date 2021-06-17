@@ -1,15 +1,16 @@
 import React from "react"
 import Image from 'next/image'
+//import mainvisual from '../public/mainvisual.jpg'
 
-const topvisual = '/mainvisual.jpg'
+const mainvisual = "/mainvisual.jpg"
 
 const Topimage = () => {
     return (
         <div>
             <Image
-            src={topvisual}
-            width={1200}
-            height={800}
+                src={mainvisual}
+                width={1200}
+                height={680}
             />
         </div>
     )
