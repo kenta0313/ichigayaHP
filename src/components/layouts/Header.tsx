@@ -192,8 +192,8 @@ const Header = () => {
             >
             <Image
               src="/logo.png"
-              height={80}
-              width={80}
+              height={70}
+              width={70}
             />
             {matches ? drawer : tabs}
           </Toolbar>
