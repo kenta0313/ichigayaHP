@@ -17,6 +17,8 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import MenuIcon from "@material-ui/icons/Menu"
 import { routes } from "../../data/routes"
 import { Link, animateScroll as scroll } from "react-scroll";
+import Image from 'next/image'
+
 
 interface ElevationScrollProps {
   children: React.ReactElement
@@ -188,17 +190,11 @@ const Header = () => {
               padding: "0 16px"
             }}
             >
-            <Typography
-            style={{
-                color: "inherit",
-                fontWeight: "bold",
-                fontSize: "1.75em",
-                position: "relative",
-                zIndex: 100
-            }}
-            >
-                logo
-              </Typography>
+            <Image
+              src="/logo.png"
+              height={80}
+              width={80}
+            />
             {matches ? drawer : tabs}
           </Toolbar>
         </AppBar>
