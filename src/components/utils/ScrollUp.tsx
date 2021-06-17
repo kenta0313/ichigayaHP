@@ -9,7 +9,8 @@ const ScrollUp: React.FC = () => {
         smooth
         component={<KeyboardArrowUpIcon />}
         style={{
-          borderRadius: "50%"
+          borderRadius: "50%",
+          color: "#047857"
         }}
       />
     </>
