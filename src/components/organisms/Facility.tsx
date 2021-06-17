@@ -46,8 +46,8 @@ const Facility = () => {
         <div id="facility">
             <Title title="設備"/>
             <div className="grid grid-cols-3 md:grid-cols-5 w-auto content-center md:mx-24">
-                {icon_images.map((icon_image) =>
-                    <div className="w-100 text-center my-5">
+                {icon_images.map((icon_image,id) =>
+                    <div key={id} className="w-100 text-center my-5">
                         <Image
                             src={icon_image.image}
                             width={100}
