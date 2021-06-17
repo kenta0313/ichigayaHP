@@ -3,8 +3,8 @@ import Title from "../atoms/Title"
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const containerStyle = {
-    width: "400px",
-    height: "400px",
+    width: "350px",
+    height: "350px",
   };
 
   const center = {
