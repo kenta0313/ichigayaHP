@@ -1,9 +1,7 @@
 import React, { useState } from "react"
 import { useRouter } from "next/router"
-
 import { makeStyles, useTheme, Theme } from "@material-ui/core/styles"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
-
 import {
   Grid,
   AppBar,
@@ -15,12 +13,9 @@ import {
   SwipeableDrawer,
   IconButton,
 } from "@material-ui/core"
-
 import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import MenuIcon from "@material-ui/icons/Menu"
-
 import { routes } from "../../data/routes"
-
 import { Link, animateScroll as scroll } from "react-scroll";
 
 interface ElevationScrollProps {
