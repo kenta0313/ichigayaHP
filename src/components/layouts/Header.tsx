@@ -194,6 +194,7 @@ const Header = () => {
               src="/logo.png"
               height={70}
               width={70}
+              loading={"eager"}
             />
             {matches ? drawer : tabs}
           </Toolbar>
