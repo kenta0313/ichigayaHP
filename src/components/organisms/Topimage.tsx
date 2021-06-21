@@ -10,6 +10,7 @@ const Topimage = () => {
                 src={mainvisual}
                 width={1200}
                 height={680}
+                loading={"eager"}
             />
         </div>
     )

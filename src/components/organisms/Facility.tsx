@@ -53,6 +53,7 @@ const Facility = () => {
                             width={100}
                             height={100}
                             layout={"fixed"}
+                            loading={"eager"}
                         />
                         <p>{icon_image.name}</p>
                     </div>

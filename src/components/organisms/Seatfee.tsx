@@ -22,6 +22,7 @@ const Seatfee = () => {
                             src={private_img}
                             width={400}
                             height={300}
+                            loading={"eager"}
                         />
                     </div>
                     <CardContent className="text-center">
@@ -42,6 +43,7 @@ const Seatfee = () => {
                             src={table_img}
                             width={400}
                             height={300}
+                            loading={"eager"}
                         />
                     </div>
                     <CardContent className="text-center">
