@@ -14,7 +14,7 @@ const PageTemplate = ({ children, title }: PageTemplateProps) => {
   return (
     <>
       <Head>
-        <title>{title ? title : "Corporate Site Sample"}</title>
+        <title>{title}</title>
       </Head>
       <header>
         <Header />
