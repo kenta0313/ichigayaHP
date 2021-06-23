@@ -5,9 +5,9 @@ import { ThemeProvider } from "@material-ui/core/styles"
 import CssBaseline from "@material-ui/core/CssBaseline"
 import theme from "../components/utils/theme"
 import "../styles/globals.css"
+import 'tailwindcss/tailwind.css'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-
 
   return (
     <React.Fragment>
