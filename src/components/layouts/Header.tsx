@@ -16,7 +16,7 @@ import {
 import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import MenuIcon from "@material-ui/icons/Menu"
 import { routes } from "../../data/routes"
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import Image from 'next/image'
 
 

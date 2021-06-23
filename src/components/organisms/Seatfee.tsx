@@ -14,7 +14,7 @@ const Seatfee = () => {
                 <Card className="md:flex-1">
                     <CardContent className="text-center">
                         <Typography>
-                            <div className="text-3xl md:text-4xl font-semibold">個室タイプ</div>
+                            <div className="text-xl sm:text-2xl md:text-4xl font-semibold">個室タイプ</div>
                         </Typography>
                     </CardContent>
                     <div className="text-center">
@@ -27,15 +27,15 @@ const Seatfee = () => {
                     </div>
                     <CardContent className="text-center">
                         <Typography>
-                            <div className="text-3xl md:text-4xl">30分/300円</div>
-                            <div className="text-3xl md:text-4xl mt-1">1日利用:2500円</div>
+                            <div className="text-xl sm:text-2xl md:text-4xl">30分/300円</div>
+                            <div className="text-xl sm:text-2xl md:text-4xl mt-1">1日利用:2500円</div>
                         </Typography>
                     </CardContent>
                 </Card>
                 <Card className="mt-10 md:mt-0 md:flex-1 md:ml-10">
                     <CardContent className="text-center">
                         <Typography>
-                            <div className="text-3xl md:text-4xl font-semibold">テーブルタイプ</div>
+                            <div className="text-xl sm:text-2xl md:text-4xl font-semibold">テーブルタイプ</div>
                         </Typography>
                     </CardContent>
                     <div className="text-center">
@@ -48,8 +48,8 @@ const Seatfee = () => {
                     </div>
                     <CardContent className="text-center">
                         <Typography>
-                            <div className="text-3xl md:text-4xl ">1名様利用<br />30分/300円</div>
-                            <div className="text-3xl md:text-4xl mt-1">2名様利用<br />30分/400円</div>
+                            <div className="text-xl sm:text-2xl md:text-4xl ">1名様利用<br />30分/300円</div>
+                            <div className="text-xl sm:text-2xl md:text-4xl mt-1">2名様利用<br />30分/400円</div>
                         </Typography>
                     </CardContent>
                 </Card>
