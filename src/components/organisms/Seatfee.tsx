@@ -1,4 +1,4 @@
-import { Card, CardContent, CardMedia, Typography } from "@material-ui/core"
+import { Card, CardContent, Typography } from "@material-ui/core"
 import React from "react"
 import Title from "../atoms/Title"
 import Image from 'next/image'
