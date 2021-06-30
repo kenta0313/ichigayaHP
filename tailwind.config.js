@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'jit',
-  purge: ['https://dsv095335k4yr.cloudfront.net/index.html','./src/**/*.{js,jsx,ts,tsx,vue}'],
+  purge: ['./*.html','./src/**/*.{js,jsx,ts,tsx,html}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -8,9 +8,6 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ],
+  plugins: [],
   important: true,
 }
