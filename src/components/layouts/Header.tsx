@@ -17,7 +17,6 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger"
 import MenuIcon from "@material-ui/icons/Menu"
 import { routes } from "../../data/routes"
 import { Link } from "react-scroll";
-import Image from 'next/image'
 
 
 interface ElevationScrollProps {
@@ -190,7 +189,7 @@ const Header = () => {
               padding: "0 16px"
             }}
             >
-            <Image
+            <img
               src="/logo.png"
               height={70}
               width={70}

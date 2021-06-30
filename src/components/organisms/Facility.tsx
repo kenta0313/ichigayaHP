@@ -1,6 +1,5 @@
 import React from "react"
 import Title from "../atoms/Title"
-import Image from 'next/image'
 
 const icon_images = [
     {
@@ -48,11 +47,10 @@ const Facility = () => {
             <div className="grid grid-cols-3 md:grid-cols-5 w-auto content-center md:mx-24">
                 {icon_images.map((icon_image,id) =>
                     <div key={id} className="w-100 text-center my-5">
-                        <Image
+                        <img
                             src={icon_image.image}
                             width={100}
                             height={100}
-                            layout={"fixed"}
                             loading={"eager"}
                         />
                         <p>{icon_image.name}</p>

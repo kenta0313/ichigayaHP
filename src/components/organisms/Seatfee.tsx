@@ -1,7 +1,6 @@
 import { Card, CardContent, Typography } from "@material-ui/core"
 import React from "react"
 import Title from "../atoms/Title"
-import Image from 'next/image'
 
 const private_img = '/private.jpg';
 const table_img ='/table.jpg';
@@ -18,7 +17,7 @@ const Seatfee = () => {
                         </Typography>
                     </CardContent>
                     <div className="text-center">
-                        <Image
+                        <img
                             src={private_img}
                             width={400}
                             height={300}
@@ -39,7 +38,7 @@ const Seatfee = () => {
                         </Typography>
                     </CardContent>
                     <div className="text-center">
-                        <Image
+                        <img
                             src={table_img}
                             width={400}
                             height={300}
