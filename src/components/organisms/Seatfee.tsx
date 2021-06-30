@@ -16,7 +16,7 @@ const Seatfee = () => {
                             <div className="text-xl sm:text-2xl md:text-4xl font-semibold">個室タイプ</div>
                         </Typography>
                     </CardContent>
-                    <div className="text-center">
+                    <div className="flex justify-center">
                         <img
                             src={private_img}
                             width={400}
@@ -37,7 +37,7 @@ const Seatfee = () => {
                             <div className="text-xl sm:text-2xl md:text-4xl font-semibold">テーブルタイプ</div>
                         </Typography>
                     </CardContent>
-                    <div className="text-center">
+                    <div className="flex justify-center">
                         <img
                             src={table_img}
                             width={400}
