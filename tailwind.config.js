@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'jit',
-  purge: ['./**/**/*.html','./src/**/*.{js,jsx,ts,tsx,vue}'],
+  purge: ['https://dsv095335k4yr.cloudfront.net/index.html','./src/**/*.{js,jsx,ts,tsx,vue}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
