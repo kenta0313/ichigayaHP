@@ -1,0 +1,34 @@
+version: 0.2
+env:
+  git-credential-helper: yes
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - npm install
+  #pre_build:
+  #  commands:
+  #    - '[ "$NODE_ENV" = production ] || npm run eslint -- --max-warnings 0'
+  #    - '[ "$NODE_ENV" = production ] || npm run stylelint'
+  build:
+    commands:
+      - npm run build
+artifacts:
+  files: ['**/*']
+  base-directory: out
+  name: BuildArtifact
+  secondary-artifacts:
+    HtmlArtifact:
+      files: ['**/*']
+      base-directory: out
+      exclude-paths: ['_next/**/*']
+      name: HtmlArtifact
+    AssetArtifact:
+      files: ['_next/**/*']
+      base-directory: out
+      name: AssetArtifact
+cache:
+  paths:
+    - 'node_modules/**/*'
+    - '.next/cache/**/*'
