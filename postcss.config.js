@@ -1,25 +1,15 @@
 const purgecss = [
-  "@fullhuman/postcss-purgecss",
+  '@fullhuman/postcss-purgecss',
   {
-    content: [
-      "./node_modules/@brainhubeu/react-carousel/lib/style.css",
-      "./node_modules/@brainhubeu/react-carousel/lib/style.css.map",
-      "./node_modules/react-toastify/dist/*.css",
-      "./components/**/*.js",
-      "./pages/**/*.js",
-    ],
-    defaultExtractor: (content) => {
-      const broadMatches = content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [];
-      const innerMatches = content.match(/[^<>"'`\s.()]*[^<>"'`\s.():]/g) || [];
-      return broadMatches.concat(innerMatches);
-    },
+    content: ['./components/**/*.js', './pages/**/*.js'],
+    defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
   },
 ];
 module.exports = {
   plugins: [
-    "postcss-import",
-    "tailwindcss",
-    "autoprefixer",
-    ...(process.env.NODE_ENV === "production" ? [purgecss] : []),
+    'postcss-import',
+    'tailwindcss',
+    'autoprefixer',
+    ...(process.env.NODE_ENV === 'production' ? [purgecss] : []),
   ],
 };
